@@ -7,6 +7,5 @@ public class AlunoEngenharia extends AlunoGraduacao{
     @Override
     public void solicitarLivro(String livro){
         System.out.println("O(a) aluno(a) "+ this.nome +" de Engenharia solicitou o livro: "+ livro +", ele(a) tem prioridade em materiais técnicos");
-
     }
 }
