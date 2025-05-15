@@ -16,4 +16,19 @@ public class Aluno {
     public void avaliarItem(ItemBiblioteca item){
         item.avaliar();
     }
+    //override de equals() para comparar matricula
+
+
+    @Override
+    public boolean equals(Object obj) {
+        if (!(obj instanceof Aluno aluno)){
+            return false;
+        }
+        return matricula.equals(aluno.matricula);
+    }
+
+    @Override
+    public String toString() {
+        return "Nome: "+ nome + "\nMatricula: "+matricula;
+    }
 }

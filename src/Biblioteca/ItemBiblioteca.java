@@ -16,4 +16,10 @@ public class ItemBiblioteca {
     public String getTitulo(){
         return titulo;
     }
+
+    //metodo padrao para items da biblioteca fazerem override e aumentarem ele
+    @Override
+    public String toString() {
+        return "Titulo: "+ titulo + "\nCódigo: "+codigo;
+    }
 }

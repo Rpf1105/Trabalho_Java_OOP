@@ -11,4 +11,8 @@ public class AlunoGraduacao extends Aluno {
     public void solicitarLivro(String livro){
         System.out.println("O(a) aluno(a) "+ this.nome +" de "+ this.curso +" solicitou o livro: "+ livro);
     }
+    //Adiciona as informaçoes de graduação, incluindo Direito e Engenharia
+    public String toString() {
+        return super.toString()+"\nCurso: "+ curso + "\nSemestre: " + semestre;
+    }
 }
